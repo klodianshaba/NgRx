@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Store} from '@ngrx/store';
 import {State} from '../reducers';
-import {AddZipCode} from '../actions/zip-code.actions';
+import { AddZipCode } from '../actions/zip-code.actions';
 
 @Component({
   selector: 'app-add-zip-code',

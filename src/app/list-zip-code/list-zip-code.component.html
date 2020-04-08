@@ -1,0 +1,14 @@
+
+<ul>
+
+  <li *ngFor="let zip of zipCodes; let i = index">
+
+    <p>{{zip}}</p>
+
+    <button type="button" class="close"  aria-label="Close" (click)="deleteZipCode(zip)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+  </li>
+`
+</ul>

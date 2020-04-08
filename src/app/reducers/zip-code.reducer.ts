@@ -1,4 +1,6 @@
-import {ZipCodeActions, ZipCodeActionTypes} from '../actions/zip-code.actions';
+import { Action } from '@ngrx/store';
+import {ZipCodeActions , ZipCodeActionTypes} from '../actions/zip-code.actions';
+
 
 
 export const zipCodeFeatureKey = 'zipCode';
@@ -14,10 +16,10 @@ export const initialState: ZipCodeState = {
 export function ZipCodeReducer(state = initialState, action: ZipCodeActions): ZipCodeState {
   switch (action.type) {
     case ZipCodeActionTypes.AddZipCode:
-      return {...state, zipCodes: [...state.zipCodes, action.zipCode]};
+      return{...state , zipCodes: [...state.zipCodes, action.zipCode]};
 
     case ZipCodeActionTypes.RemoveZipCode:
-      return{ ...state, zipCodes: state.zipCodes.filter(item => item !== action.zipCode) };
+      return {...state , zipCodes: state.zipCodes.filter(item => item !== action.zipCode) };
 
     default:
       return state;

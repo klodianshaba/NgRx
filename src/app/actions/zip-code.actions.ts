@@ -1,8 +1,8 @@
 import { Action } from '@ngrx/store';
 
 export enum ZipCodeActionTypes {
-  AddZipCode = '[ZipCode] Add ZipCode',
-  RemoveZipCode = '[ZipCode] Remove ZipCode',
+  AddZipCode = '[ZipCode] Add ZipCodes',
+  RemoveZipCode = '[ZipCode] Remove ZipCodes',
 }
 
 export class AddZipCode implements Action {
